@@ -4,11 +4,26 @@ using namespace std;
 
 int main()
 {
-    vector<int> num{1, 2, 3, 4, 5};
+    vector<int> num;
 
-    cout << "Element at Index 0: " << num.at(0) << endl;
-    cout << "Element at Index 2: " << num.at(2) << endl;
-    cout << "Element at Index 4: " << num.at(4) << endl;
+    num.assign(9, 22);
 
-    return 0;
+    for (int i = 0; i < num.size(); i++)
+    {
+        cout << num[i] << endl;
+    }
+    cout << "``````````````````````````````````````````````````````" << endl;
+
+    num.insert(num.begin() + 2, 50);
+    for (int i = 0; i < num.size(); i++)
+    {
+        cout << num[i] << endl;
+    }
+
+    cout << "``````````````````````````````````````````````````````" << endl;
+
+    for (auto &a : num)
+    {
+        cout << a << endl;
+    }
 }

@@ -2,7 +2,7 @@
 using std::cout;
 using std::endl;
 
-void Humidity::runtwo(string firstname, string lastname)
+void Humidity::run(string firstname, string lastname)
 {
     cout << "Data 2 : ";
     cout << firstname << lastname << endl;

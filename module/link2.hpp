@@ -8,5 +8,5 @@ class Humidity : public Temperature
 public:
     // string name = "Viky";
 
-    void runtwo(string firstname, string lastname);
+     void run(string firstname, string lastname);
 };

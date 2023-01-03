@@ -18,8 +18,6 @@
 //     cout << obj.get();
 // }
 
-
-
 #include <iostream>
 #include <memory>
 using namespace std;
@@ -27,7 +25,10 @@ using namespace std;
 class A
 {
 public:
-    void show() { cout << "A::show()" << endl; }
+    void show()
+    {
+        cout << "A::show()" << endl;
+    }
 };
 
 int main()

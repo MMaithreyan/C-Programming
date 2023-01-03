@@ -27,9 +27,9 @@ int main()
         }
         cout << endl;
     }
-    // for (auto &p : map)
-    // {
-    //     cout << p.first << ": ";
+    // for      (auto &p : map)
+    //{
+    // cout << p.first << ": ";
     //     for (auto &v : p.second)
     //     {
     //         cout << v << " ";

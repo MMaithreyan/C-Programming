@@ -4,9 +4,12 @@
 
 int main()
 {
-    // Temperature temObj;
-    Humidity humObj;
+    // Temperature *temObj;
+    // Humidity humObj;
+    // temObj = &humObj;
 
-    humObj.run("John", "Wick");
-    humObj.runtwo("Dinesh", "Kumar");
+    Temperature *temObj = new Humidity();
+
+    temObj->run("John", "Wick");
+    temObj->run("Dinesh", "Kumar");
 }

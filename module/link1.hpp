@@ -8,5 +8,5 @@ using std::string;
 class Temperature
 {
 public:
-    void run(string name, string lastname);
+   virtual void run(string name, string lastname) = 0;
 };

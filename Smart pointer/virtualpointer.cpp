@@ -2,12 +2,12 @@
 using namespace std;
 class A
 {
-    public :
-        virtual void display(){
-            cout << "Base class is invoked" << endl;
-}
-}
-;
+public:
+    virtual void display()
+    {
+        cout << "Base class is invoked" << endl;
+    }
+};
 class B : public A
 {
 public:

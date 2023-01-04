@@ -32,7 +32,6 @@ public:
         }
     }
 };
-// ===============
 int InputValues()
 {
     int value;

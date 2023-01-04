@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 #include <iterator>
 #include <functional>
@@ -16,20 +17,25 @@ public:
 
     void CallEveryone()
     {
+        int array[10] = {0};
+        int itr = 0;
+
         for (loop = NewVector.begin(); loop != NewVector.end(); loop++)
         {
-            std ::cout << (*loop)();
+            // std ::cout << (*loop)();
+            array[itr] = (*loop)();
+            itr++;
+        }
+        for (int i = 0; i < itr; i++)
+        {
+            std::cout << "->" << array[i] << std::endl;
         }
     }
 };
 
-
-#include <iostream>
-//#include "Testing.hpp"
-
 int InputValues()
 {
-    int value ;
+    int value;
     std::cin >> value;
     return value;
 }
@@ -41,11 +47,10 @@ int main()
 
     std::cout << "Enter The Size\n";
     std::cin >> size;
-    std::cout << "Enter " << size <<" Values\n";
-    while ((size--) != 0)
+    std::cout << "Enter " << size << " Values\n";
+    for (int i = 0; i < size; i++)
     {
         Test.RegisterCallback(InputValues);
-       
     }
-     Test.CallEveryone();
+    Test.CallEveryone();
 }

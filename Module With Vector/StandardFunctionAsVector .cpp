@@ -10,6 +10,7 @@ private:
 
 public:
     std::vector<std::function<int()>>::iterator loop;
+
     void RegisterCallback(std::function<int()> InputValues)
     {
         NewVector.push_back(InputValues);

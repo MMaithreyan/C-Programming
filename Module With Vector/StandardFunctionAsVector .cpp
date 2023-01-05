@@ -21,10 +21,12 @@ public:
         int array[10] = {0};
         int itr = 0;
 
-        for (loop = NewVector.begin(); loop != NewVector.end(); loop++)
+        // for (loop = NewVector.begin(); loop != NewVector.end(); loop++)
+        // {
+        for (auto & loop : NewVector)
         {
             // std ::cout << (*loop)();
-            array[itr] = (*loop)();
+            array[itr] = (loop)();
             itr++;
         }
         for (int i = 0; i < itr; i++)

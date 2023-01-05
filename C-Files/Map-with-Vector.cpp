@@ -27,14 +27,15 @@ int main()
         }
         cout << endl;
     }
-    // for      (auto &p : map)
-    //{
-    // cout << p.first << ": ";
-    //     for (auto &v : p.second)
-    //     {
-    //         cout << v << " ";
-    //     }
-    //     cout << endl;
-    // }
+// `````````````````````````````````````````````````````````````````````````
+    for (auto &p : student)
+    {
+        cout << p.first << ": ";
+        for (auto &v : p.second)
+        {
+            cout << v << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }
